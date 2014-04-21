@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>248A7135-3E55-4D3C-B468-AE7770DE9CF0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IDAnalyticsDemoApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D251E877-4AC8-47EC-B167-90AAA533376B</key>
+		<string>ssh://github.com/idpaterson/IDAnalyticsDemoApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IDAnalyticsDemoApp.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D251E877-4AC8-47EC-B167-90AAA533376B</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/idpaterson/IDAnalyticsDemoApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D251E877-4AC8-47EC-B167-90AAA533376B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D251E877-4AC8-47EC-B167-90AAA533376B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IDAnalyticsDemoApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
