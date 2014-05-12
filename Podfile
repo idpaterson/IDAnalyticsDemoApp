@@ -3,6 +3,8 @@
 
 target "IDAnalyticsDemoApp" do
 
+pod 'Analytics'
+
 end
 
 target "IDAnalyticsDemoAppTests" do
