@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+OBJC_EXPORT NSInteger const IDAnalyticsUnknownInitiation;
+
 @interface IDAnalyticsEvent : NSObject
 {
 @private

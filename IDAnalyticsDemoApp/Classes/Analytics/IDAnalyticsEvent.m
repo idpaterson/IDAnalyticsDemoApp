@@ -10,6 +10,8 @@
 
 #import "IDAnalyticsEvent+Protected.h"
 
+NSInteger const IDAnalyticsUnknownInitiation = -1;
+
 @implementation IDAnalyticsEvent
 
 static NSString * const IDAnalyticsEventInitiatedByAttribute = @"Initiated By";
@@ -101,8 +103,8 @@ static NSString * const IDAnalyticsEventInitiatedByAttribute = @"Initiated By";
     [_attributes setValue:[initiationLabels objectAtIndex:initiationCode]
                    forKey:IDAnalyticsEventInitiatedByAttribute];
 
-    // Reset to -1 to avoid carrying over past initiations
-    *initiationCodePtr = -1;
+    // Reset to unknown to avoid carrying over past initiations
+    *initiationCodePtr = IDAnalyticsUnknownInitiation;
 
     return YES;
 }
