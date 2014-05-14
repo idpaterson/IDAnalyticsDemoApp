@@ -21,9 +21,10 @@
 		3C1CB46118EB716900906D25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1CB44318EB716900906D25 /* UIKit.framework */; };
 		3C1CB46918EB716900906D25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C1CB46718EB716900906D25 /* InfoPlist.strings */; };
 		3C1CB46B18EB716900906D25 /* IDAnalyticsDemoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1CB46A18EB716900906D25 /* IDAnalyticsDemoAppTests.m */; };
+		3C9431A219224CB50095B602 /* IDAnalyticsScreenEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9431A119224CB50095B602 /* IDAnalyticsScreenEvent.m */; };
 		3CCE3BED18FA254D002ADFFA /* IDAnalyticsEvent+ThermostatEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCE3BE718FA254D002ADFFA /* IDAnalyticsEvent+ThermostatEvents.m */; };
 		3CCE3BEE18FA254D002ADFFA /* IDAnalyticsEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCE3BEA18FA254D002ADFFA /* IDAnalyticsEvent.m */; };
-		3CCE3BEF18FA254D002ADFFA /* IDAnalyticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCE3BEC18FA254D002ADFFA /* IDAnalyticsManager.m */; };
+		3CCE3BEF18FA254D002ADFFA /* IDAnalyticsMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCE3BEC18FA254D002ADFFA /* IDAnalyticsMediator.m */; };
 		3CCE3BF118FA2580002ADFFA /* IDAnalyticsEventTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCE3BF018FA2580002ADFFA /* IDAnalyticsEventTests.m */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,8 @@
 		3C1CB46818EB716900906D25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C1CB46A18EB716900906D25 /* IDAnalyticsDemoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDAnalyticsDemoAppTests.m; sourceTree = "<group>"; };
 		3C1CB48618EB837000906D25 /* IDLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDLogging.h; path = Classes/Support/IDLogging.h; sourceTree = "<group>"; };
+		3C9431A019224CB50095B602 /* IDAnalyticsScreenEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDAnalyticsScreenEvent.h; sourceTree = "<group>"; };
+		3C9431A119224CB50095B602 /* IDAnalyticsScreenEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAnalyticsScreenEvent.m; sourceTree = "<group>"; };
 		3CCE3BE618FA254D002ADFFA /* IDAnalyticsEvent+ThermostatEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDAnalyticsEvent+ThermostatEvents.h"; sourceTree = "<group>"; };
 		3CCE3BE718FA254D002ADFFA /* IDAnalyticsEvent+ThermostatEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDAnalyticsEvent+ThermostatEvents.m"; sourceTree = "<group>"; };
 		3CCE3BE818FA254D002ADFFA /* IDAnalyticsEvent+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDAnalyticsEvent+Protected.h"; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				3CCE3BEA18FA254D002ADFFA /* IDAnalyticsEvent.m */,
 				3CCE3BEB18FA254D002ADFFA /* IDAnalyticsManager.h */,
 				3CCE3BEC18FA254D002ADFFA /* IDAnalyticsManager.m */,
+				3C9431A019224CB50095B602 /* IDAnalyticsScreenEvent.h */,
+				3C9431A119224CB50095B602 /* IDAnalyticsScreenEvent.m */,
 			);
 			name = Analytics;
 			path = Classes/Analytics;
@@ -311,6 +316,7 @@
 				3C1CB44C18EB716900906D25 /* main.m in Sources */,
 				3C1CB45018EB716900906D25 /* IDAppDelegate.m in Sources */,
 				3CCE3BEF18FA254D002ADFFA /* IDAnalyticsManager.m in Sources */,
+				3C9431A219224CB50095B602 /* IDAnalyticsScreenEvent.m in Sources */,
 				3CCE3BEE18FA254D002ADFFA /* IDAnalyticsEvent.m in Sources */,
 				3C1CB45618EB716900906D25 /* IDViewController.m in Sources */,
 			);
