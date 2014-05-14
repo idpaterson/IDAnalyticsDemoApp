@@ -109,6 +109,53 @@ static NSString * const IDAnalyticsEventInitiatedByAttribute = @"Initiated By";
     return YES;
 }
 
+#pragma mark - Logging
+
+- (NSString *)modelName
+{
+    NSString * className = NSStringFromClass([self class]);
+
+    // Strip the IDAnalytics prefix
+    if ([className hasPrefix:@"IDAnalytics"])
+    {
+        return [className substringFromIndex:11];
+    }
+
+    return className;
+}
+
+- (NSString *)description
+{
+    NSDictionary     * attributes = self.attributes;
+    NSMutableArray   * lines      = [NSMutableArray arrayWithCapacity:2 + attributes.count];
+    __block NSString * line;
+    NSUInteger         maxNameLength = 0;
+
+    // The max length is used to align the attribute names
+    for (NSString * name in attributes)
+    {
+        if (name.length > maxNameLength)
+        {
+            maxNameLength = name.length;
+        }
+    }
+
+    // Add the name of the event following the native description
+    line = [super description];
+    [lines addObject:line];
+    line = [NSString stringWithFormat:@"%@ Name: %@", self.modelName, self.name];
+    [lines addObject:line];
+
+    // Add one line for each attribute with the names left-aligned in one column
+    // and all values left-aligned in a second column.
+    [attributes enumerateKeysAndObjectsUsingBlock:^(NSString * name, id value, BOOL * stop) {
+        line = [NSString stringWithFormat:@"\t%-*s : %@", maxNameLength, name.UTF8String, value];
+        [lines addObject:line];
+    }];
+
+    return [lines componentsJoinedByString:@"\n"];
+}
+
 #pragma mark - Events
 
 #pragma mark Session Events
