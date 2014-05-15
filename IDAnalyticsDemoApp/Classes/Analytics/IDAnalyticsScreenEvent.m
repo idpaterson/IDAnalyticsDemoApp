@@ -8,7 +8,7 @@
 
 #import "IDAnalyticsScreenEvent.h"
 
-#import "IDAnalyticsMediator+Protected.h"
+#import "IDAnalyticsMediator.h"
 
 @implementation IDAnalyticsScreenEvent
 
@@ -19,7 +19,7 @@
 
 - (void)track
 {
-    [[IDAnalyticsMediator sharedMediator] trackScreen:self];
+    [[IDAnalyticsMediator sharedMediator] trackScreen:self options:nil];
 }
 
 @end

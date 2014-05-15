@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+/// The default value of all initiations, this specifies that there was no
+/// initiation recorded for a particular event.
 OBJC_EXPORT NSInteger const IDAnalyticsUnknownInitiation;
 
+///
+/// <#class description#>
+///
 @interface IDAnalyticsEvent : NSObject
 {
 @private

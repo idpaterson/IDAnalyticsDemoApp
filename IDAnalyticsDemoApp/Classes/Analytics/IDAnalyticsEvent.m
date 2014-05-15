@@ -9,6 +9,7 @@
 #import "IDAnalyticsEvent.h"
 
 #import "IDAnalyticsEvent+Protected.h"
+#import "IDAnalyticsMediator.h"
 
 NSInteger const IDAnalyticsUnknownInitiation = -1;
 
@@ -157,6 +158,11 @@ static NSString * const IDAnalyticsEventInitiatedByAttribute = @"Initiated By";
 }
 
 #pragma mark - Events
+
+- (void)track
+{
+    [[IDAnalyticsMediator sharedMediator] trackEvent:self options:nil];
+}
 
 #pragma mark Session Events
 

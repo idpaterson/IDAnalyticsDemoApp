@@ -74,8 +74,8 @@
 		3CCE3BE818FA254D002ADFFA /* IDAnalyticsEvent+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDAnalyticsEvent+Protected.h"; sourceTree = "<group>"; };
 		3CCE3BE918FA254D002ADFFA /* IDAnalyticsEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDAnalyticsEvent.h; sourceTree = "<group>"; };
 		3CCE3BEA18FA254D002ADFFA /* IDAnalyticsEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAnalyticsEvent.m; sourceTree = "<group>"; };
-		3CCE3BEB18FA254D002ADFFA /* IDAnalyticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDAnalyticsManager.h; sourceTree = "<group>"; };
-		3CCE3BEC18FA254D002ADFFA /* IDAnalyticsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAnalyticsManager.m; sourceTree = "<group>"; };
+		3CCE3BEB18FA254D002ADFFA /* IDAnalyticsMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDAnalyticsMediator.h; sourceTree = "<group>"; };
+		3CCE3BEC18FA254D002ADFFA /* IDAnalyticsMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAnalyticsMediator.m; sourceTree = "<group>"; };
 		3CCE3BF018FA2580002ADFFA /* IDAnalyticsEventTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDAnalyticsEventTests.m; path = Analytics/IDAnalyticsEventTests.m; sourceTree = "<group>"; tabWidth = 4; };
 		69105459D0CD4F9FABCF8F85 /* libPods-IDAnalyticsDemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IDAnalyticsDemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20B38A76E454725BA6CADAB /* Pods-IDAnalyticsDemoApp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDAnalyticsDemoApp.xcconfig"; path = "Pods/Pods-IDAnalyticsDemoApp.xcconfig"; sourceTree = "<group>"; };
@@ -201,10 +201,10 @@
 				3CCE3BE818FA254D002ADFFA /* IDAnalyticsEvent+Protected.h */,
 				3CCE3BE918FA254D002ADFFA /* IDAnalyticsEvent.h */,
 				3CCE3BEA18FA254D002ADFFA /* IDAnalyticsEvent.m */,
-				3CCE3BEB18FA254D002ADFFA /* IDAnalyticsManager.h */,
-				3CCE3BEC18FA254D002ADFFA /* IDAnalyticsManager.m */,
 				3C9431A019224CB50095B602 /* IDAnalyticsScreenEvent.h */,
 				3C9431A119224CB50095B602 /* IDAnalyticsScreenEvent.m */,
+				3CCE3BEB18FA254D002ADFFA /* IDAnalyticsMediator.h */,
+				3CCE3BEC18FA254D002ADFFA /* IDAnalyticsMediator.m */,
 				3C7F4C2A19239FB7005C5FBF /* IDAnalyticsService.h */,
 				3C926B381924E3A80029EDD7 /* IDAnalyticsServiceLogger.h */,
 				3C926B391924E3A80029EDD7 /* IDAnalyticsServiceLogger.m */,
@@ -369,8 +369,8 @@
 				3C2E35571924D8900088FA33 /* IDAnalyticsServiceSegmentIO.m in Sources */,
 				3C1CB44C18EB716900906D25 /* main.m in Sources */,
 				3C1CB45018EB716900906D25 /* IDAppDelegate.m in Sources */,
-				3CCE3BEF18FA254D002ADFFA /* IDAnalyticsManager.m in Sources */,
 				3C9431A219224CB50095B602 /* IDAnalyticsScreenEvent.m in Sources */,
+				3CCE3BEF18FA254D002ADFFA /* IDAnalyticsMediator.m in Sources */,
 				3C926B3A1924E3A80029EDD7 /* IDAnalyticsServiceLogger.m in Sources */,
 				3CCE3BEE18FA254D002ADFFA /* IDAnalyticsEvent.m in Sources */,
 				3C1CB45618EB716900906D25 /* IDViewController.m in Sources */,
