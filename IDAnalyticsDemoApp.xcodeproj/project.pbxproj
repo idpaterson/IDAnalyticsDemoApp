@@ -59,6 +59,7 @@
 		3C1CB46818EB716900906D25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C1CB46A18EB716900906D25 /* IDAnalyticsDemoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDAnalyticsDemoAppTests.m; sourceTree = "<group>"; };
 		3C1CB48618EB837000906D25 /* IDLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDLogging.h; path = Classes/Support/IDLogging.h; sourceTree = "<group>"; };
+		3C7F4C2A19239FB7005C5FBF /* IDAnalyticsService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDAnalyticsService.h; sourceTree = "<group>"; };
 		3C9431A019224CB50095B602 /* IDAnalyticsScreenEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDAnalyticsScreenEvent.h; sourceTree = "<group>"; };
 		3C9431A119224CB50095B602 /* IDAnalyticsScreenEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAnalyticsScreenEvent.m; sourceTree = "<group>"; };
 		3CCE3BE618FA254D002ADFFA /* IDAnalyticsEvent+ThermostatEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDAnalyticsEvent+ThermostatEvents.h"; sourceTree = "<group>"; };
@@ -192,6 +193,7 @@
 				3CCE3BEC18FA254D002ADFFA /* IDAnalyticsManager.m */,
 				3C9431A019224CB50095B602 /* IDAnalyticsScreenEvent.h */,
 				3C9431A119224CB50095B602 /* IDAnalyticsScreenEvent.m */,
+				3C7F4C2A19239FB7005C5FBF /* IDAnalyticsService.h */,
 			);
 			name = Analytics;
 			path = Classes/Analytics;
