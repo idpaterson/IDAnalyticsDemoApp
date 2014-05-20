@@ -192,18 +192,4 @@ static NSString * const IDAnalyticsEventInitiatedByAttribute = @"Initiated By";
     [[IDAnalyticsMediator sharedMediator] trackEvent:self options:nil];
 }
 
-#pragma mark Session Events
-
-+ (instancetype)eventForSessionStart
-{
-    return [IDAnalyticsEvent eventWithName:@"Session Started"
-                                attributes:nil];
-}
-
-+ (instancetype)eventForSessionEnd
-{
-    return [IDAnalyticsEvent eventWithName:@"Session Ended"
-                                attributes:nil];
-}
-
 @end

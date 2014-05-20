@@ -50,9 +50,5 @@ typedef id (^IDAnalyticsEventAttributeTransformingBlock)(NSString * name, id val
 #pragma mark - Events
 /// @name      Events
 
-#pragma mark Session Events
-
-+ (instancetype)eventForSessionStart;
-+ (instancetype)eventForSessionEnd;
 
 @end
