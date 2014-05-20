@@ -1,0 +1,1123 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>IDAnalyticsEvent Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">IDAnalyticsDemoApp </a></h1>
+				<a id="developerHome" href="../index.html">Ian Paterson</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">IDAnalyticsEvent Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/attributes">&nbsp;&nbsp;&nbsp;&nbsp;attributes</option>
+	
+	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/eventForSessionEnd">&nbsp;&nbsp;&nbsp;&nbsp;+ eventForSessionEnd</option>
+	
+	<option value="//api/name/eventForSessionStart">&nbsp;&nbsp;&nbsp;&nbsp;+ eventForSessionStart</option>
+	
+	<option value="//api/name/eventWithName:">&nbsp;&nbsp;&nbsp;&nbsp;+ eventWithName:</option>
+	
+	<option value="//api/name/eventWithName:attributes:">&nbsp;&nbsp;&nbsp;&nbsp;+ eventWithName:attributes:</option>
+	
+	<option value="//api/name/initiateThermostatAdjustment:">&nbsp;&nbsp;&nbsp;&nbsp;+ initiateThermostatAdjustment:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addAttributesForInitiation:labels:">&nbsp;&nbsp;&nbsp;&nbsp;- addAttributesForInitiation:labels:</option>
+	
+	<option value="//api/name/eventWithAttributesOfClass:transformedBy:">&nbsp;&nbsp;&nbsp;&nbsp;- eventWithAttributesOfClass:transformedBy:</option>
+	
+	<option value="//api/name/initWithName:attributes:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithName:attributes:</option>
+	
+	<option value="//api/name/setValue:forAttribute:">&nbsp;&nbsp;&nbsp;&nbsp;- setValue:forAttribute:</option>
+	
+	<option value="//api/name/track">&nbsp;&nbsp;&nbsp;&nbsp;- track</option>
+	
+	<option value="//api/name/valueForAttribute:">&nbsp;&nbsp;&nbsp;&nbsp;- valueForAttribute:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Transformations">Transformations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Events">Events</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_SessionEvents Methods">SessionEvents Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_ThermostatEvents Methods">ThermostatEvents Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attributes">attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eventForSessionEnd">eventForSessionEnd</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eventForSessionStart">eventForSessionStart</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eventWithName:">eventWithName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eventWithName:attributes:">eventWithName:attributes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initiateThermostatAdjustment:">initiateThermostatAdjustment:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addAttributesForInitiation:labels:">addAttributesForInitiation:labels:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eventWithAttributesOfClass:transformedBy:">eventWithAttributesOfClass:transformedBy:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithName:attributes:">initWithName:attributes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setValue:forAttribute:">setValue:forAttribute:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/track">track</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/valueForAttribute:">valueForAttribute:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="IDAnalyticsEvent Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">IDAnalyticsEvent Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">IDAnalyticsEvent.h<br />IDAnalyticsEvent.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Represents an event with a name and attributes.</p>
+
+<p>Categories on <code>IDAnalyticsEvent</code> can provide specific event initializers as
+necessary; this class is meant to remain clean.</p>
+
+<p>The <code>Protected</code> category provides access to the mutable interface of
+<code>IDAnalyticsEvent</code>. This should only be used inside the analytics classes;
+all events must be immutable to the app to avoid recurrence of the problems
+that this approach attempts to solve.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attributes">&nbsp;&nbsp;attributes</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Transformations" name="task_Transformations"></a>
+						<h3 class="subsubtitle task-title">Transformations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eventWithAttributesOfClass:transformedBy:">&ndash;&nbsp;eventWithAttributesOfClass:transformedBy:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Events" name="task_Events"></a>
+						<h3 class="subsubtitle task-title">Events</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/track">&ndash;&nbsp;track</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithName:attributes:">&ndash;&nbsp;initWithName:attributes:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eventWithName:attributes:">+&nbsp;eventWithName:attributes:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eventWithName:">+&nbsp;eventWithName:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setValue:forAttribute:">&ndash;&nbsp;setValue:forAttribute:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/valueForAttribute:">&ndash;&nbsp;valueForAttribute:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addAttributesForInitiation:labels:">&ndash;&nbsp;addAttributesForInitiation:labels:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="SessionEvents Methods" name="task_SessionEvents Methods"></a>
+						<h3 class="subsubtitle task-title">SessionEvents Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eventForSessionStart">+&nbsp;eventForSessionStart</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eventForSessionEnd">+&nbsp;eventForSessionEnd</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="ThermostatEvents Methods" name="task_ThermostatEvents Methods"></a>
+						<h3 class="subsubtitle task-title">ThermostatEvents Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initiateThermostatAdjustment:">+&nbsp;initiateThermostatAdjustment:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/attributes" title="attributes"></a>
+	<h3 class="subsubtitle method-title">attributes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Provides read-only access to the attributes that will be recorded for the
+event</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSDictionary *attributes</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IDAnalyticsEvent.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="subsubtitle method-title">name</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name that will be recorded for the event.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSString *name</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IDAnalyticsEvent.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/eventForSessionEnd" title="eventForSessionEnd"></a>
+	<h3 class="subsubtitle method-title">eventForSessionEnd</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Records the end of a session.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)eventForSessionEnd</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The event or <code>nil</code> if a session was not started</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This could be done any time the app goes into the background, but it is
+probably best to wait until the app has been in the background for a certain
+length of time before actually tracking the event.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IDAnalyticsEvent+SessionEvents.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eventForSessionStart" title="eventForSessionStart"></a>
+	<h3 class="subsubtitle method-title">eventForSessionStart</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Records the start of a session.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)eventForSessionStart</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The event or <code>nil</code> if a session was still active</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This generally corresponds to a fresh launch of the app, or returning to the
+app after being in the background for a certain length of time or longer.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IDAnalyticsEvent+SessionEvents.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eventWithName:" title="eventWithName:"></a>
+	<h3 class="subsubtitle method-title">eventWithName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new event with the specified name and empty attributes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)eventWithName:(NSString *)<em>name</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the event.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new <code>IDAnalyticsEvent</code> with the specified name and empty
+attributes.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IDAnalyticsEvent+Protected.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eventWithName:attributes:" title="eventWithName:attributes:"></a>
+	<h3 class="subsubtitle method-title">eventWithName:attributes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new event with the specified name and a shallow copy of the
+specified attributes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)eventWithName:(NSString *)<em>name</em> attributes:(NSDictionary *)<em>attributes</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the event.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>attributes</em></dt>
+			<dd><p>The attributes to record for the event.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new <code>IDAnalyticsEvent</code> with the specified name and attributes.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IDAnalyticsEvent+Protected.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initiateThermostatAdjustment:" title="initiateThermostatAdjustment:"></a>
+	<h3 class="subsubtitle method-title">initiateThermostatAdjustment:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the initiation for the <em>Adjusted Thermostat</em> event.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)initiateThermostatAdjustment:(IDAnalyticsThermostatAdjustmentInitiation)<em>initiation</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>initiation</em></dt>
+			<dd><p>The initiation</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IDAnalyticsEvent+ThermostatEvents.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addAttributesForInitiation:labels:" title="addAttributesForInitiation:labels:"></a>
+	<h3 class="subsubtitle method-title">addAttributesForInitiation:labels:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds a standard <code>Initiated By</code> attribute with a value corresponding to the
+label for the specified initiation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)addAttributesForInitiation:(NSInteger *)<em>initiationCodePtr</em> labels:(NSArray *)<em>initiationLabels</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>initiationCodePtr</em></dt>
+			<dd><p>A pointer to the initiation code for the event</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>initiationLabels</em></dt>
+			<dd><p>An array of strings indexed according to the
+known initiation codes for the event.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A boolean indicating whether the <code>Initiated By</code> attribute was added.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The initiation code is provided as a pointer to allow this method to reset
+the initiation to an invalid state (<code>IDAnalyticsUnknownInitiation</code>) after
+using the initiation. Any actions that provide a default initiation must
+check the value of the initiation code against <code>IDAnalyticsUnknownInitiation</code>
+and apply the default value if necessary.</p>
+
+<p>If the initiation code is <code>IDAnalyticsUnknownInitiation</code>, the <code>Initiated By</code>
+attribute is not recorded.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IDAnalyticsEvent+Protected.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eventWithAttributesOfClass:transformedBy:" title="eventWithAttributesOfClass:transformedBy:"></a>
+	<h3 class="subsubtitle method-title">eventWithAttributesOfClass:transformedBy:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a copy of the event with all attribute values of the designated
+class transformed according to the return value of the block.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)eventWithAttributesOfClass:(Class)<em>class</em> transformedBy:(IDAnalyticsEventAttributeTransformingBlock)<em>transformBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>class</em></dt>
+			<dd><p>The class, members of which will be transformed</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>transformBlock</em></dt>
+			<dd><p>A block that, given a property name and value, returns
+a new value for the property</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An event of the same type as the receiver</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IDAnalyticsEvent.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithName:attributes:" title="initWithName:attributes:"></a>
+	<h3 class="subsubtitle method-title">initWithName:attributes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new event with the specified name and a shallow copy of the
+specified attributes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithName:(NSString *)<em>name</em> attributes:(NSDictionary *)<em>attributes</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the event.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>attributes</em></dt>
+			<dd><p>The attributes to record for the event.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new <code>IDAnalyticsEvent</code> with the specified name and attributes.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IDAnalyticsEvent+Protected.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setValue:forAttribute:" title="setValue:forAttribute:"></a>
+	<h3 class="subsubtitle method-title">setValue:forAttribute:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates the value for the specified attribute.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setValue:(id)<em>value</em> forAttribute:(NSString *)<em>attribute</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>The value to set.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>attribute</em></dt>
+			<dd><p>The name of the attribute of which to set the value.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If the value is <code>nil</code>, the specified attribute will be removed from the
+event. Set the value to <code>[NSNull null]</code> if a null value is intended.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IDAnalyticsEvent+Protected.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/track" title="track"></a>
+	<h3 class="subsubtitle method-title">track</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Convenience method to submit the event to be tracked.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)track</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IDAnalyticsEvent.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/valueForAttribute:" title="valueForAttribute:"></a>
+	<h3 class="subsubtitle method-title">valueForAttribute:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the current value for the specified attribute.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)valueForAttribute:(NSString *)<em>attribute</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>attribute</em></dt>
+			<dd><p>The name of the attribute.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The value of the attribute.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">IDAnalyticsEvent+Protected.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Ian Paterson. All rights reserved. (Last updated: 2014-05-20)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
