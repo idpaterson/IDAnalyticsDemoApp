@@ -15,7 +15,15 @@ OBJC_EXPORT NSInteger const IDAnalyticsUnknownInitiation;
 typedef id (^IDAnalyticsEventAttributeTransformingBlock)(NSString * name, id value);
 
 ///
-/// <#class description#>
+/// Represents an event with a name and attributes.
+///
+/// Categories on `IDAnalyticsEvent` can provide specific event initializers as
+/// necessary; this class is meant to remain clean.
+///
+/// The `Protected` category provides access to the mutable interface of
+/// `IDAnalyticsEvent`. This should only be used inside the analytics classes;
+/// all events must be immutable to the app to avoid recurrence of the problems
+/// that this approach attempts to solve.
 ///
 @interface IDAnalyticsEvent : NSObject
 {
@@ -30,9 +38,6 @@ typedef id (^IDAnalyticsEventAttributeTransformingBlock)(NSString * name, id val
 /// Provides read-only access to the attributes that will be recorded for the
 /// event
 @property (nonatomic, strong, readonly) NSDictionary * attributes;
-
-/// Convenience method to submit the event to be tracked.
-- (void)track;
 
 #pragma mark - Transformations
 /// @name      Transformations
@@ -50,5 +55,7 @@ typedef id (^IDAnalyticsEventAttributeTransformingBlock)(NSString * name, id val
 #pragma mark - Events
 /// @name      Events
 
+/// Convenience method to submit the event to be tracked.
+- (void)track;
 
 @end
