@@ -28,6 +28,14 @@ NSString * const IDAnalyticsServiceNameSegmentIO = @"Segment.io";
 /// is readonly, returning the shared instance.
 @property (nonatomic, strong, readonly) Analytics * analyticsInstance;
 
+/// Creates a copy of the event that is suitable for recording to Segment.io,
+/// for example by modifying attribute values of unsupported classes.
+///
+/// @param event The original event.
+///
+/// @return A copy of event with suitable name and attributed for this service
+- (id)compatibleEventForEvent:(IDAnalyticsEvent *)event;
+
 @end
 
 @implementation IDAnalyticsServiceSegmentIO
@@ -67,6 +75,16 @@ static BOOL _segmentIODebugLoggingEnabled = NO;
     return [Analytics sharedAnalytics];
 }
 
+- (id)compatibleEventForEvent:(IDAnalyticsEvent *)event
+{
+    event = [event eventWithAttributesOfClass:[NSSet class]
+                                transformedBy:^id(NSString *name, NSSet * value) {
+                                    return value.allObjects;
+                                }];
+
+    return event;
+}
+
 #pragma mark - IDAnalyticsService implementation
 
 - (void)reset
@@ -76,6 +94,8 @@ static BOOL _segmentIODebugLoggingEnabled = NO;
 
 - (void)trackEvent:(IDAnalyticsEvent *)event options:(NSDictionary *)options
 {
+    event = [self compatibleEventForEvent:event];
+
     [self.analyticsInstance track:event.name
                        properties:event.attributes
                           options:options];
@@ -83,6 +103,8 @@ static BOOL _segmentIODebugLoggingEnabled = NO;
 
 - (void)trackScreen:(IDAnalyticsScreenEvent *)screenEvent options:(NSDictionary *)options
 {
+    screenEvent = [self compatibleEventForEvent:screenEvent];
+
     [self.analyticsInstance screen:screenEvent.screenName
                         properties:screenEvent.attributes
                            options:options];

@@ -157,6 +157,34 @@ static NSString * const IDAnalyticsEventInitiatedByAttribute = @"Initiated By";
     return [lines componentsJoinedByString:@"\n"];
 }
 
+#pragma mark - Transformations
+
+- (instancetype)eventWithAttributesOfClass:(Class)class transformedBy:(IDAnalyticsEventAttributeTransformingBlock)transformBlock
+{
+    if (!transformBlock)
+    {
+        return self;
+    }
+
+    id event = [[self class] eventWithName:self.name];
+
+    [self.attributes enumerateKeysAndObjectsUsingBlock:^(NSString * name, id value, BOOL *stop) {
+        id newValue = value;
+
+        if ([value isKindOfClass:class])
+        {
+            newValue = transformBlock(name, value);
+        }
+
+        if (newValue)
+        {
+            [event setValue:newValue forAttribute:name];
+        }
+    }];
+
+    return event;
+}
+
 #pragma mark - Events
 
 - (void)track

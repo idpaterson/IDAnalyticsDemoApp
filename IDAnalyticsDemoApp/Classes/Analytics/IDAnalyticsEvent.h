@@ -12,6 +12,8 @@
 /// initiation recorded for a particular event.
 OBJC_EXPORT NSInteger const IDAnalyticsUnknownInitiation;
 
+typedef id (^IDAnalyticsEventAttributeTransformingBlock)(NSString * name, id value);
+
 ///
 /// <#class description#>
 ///
@@ -31,6 +33,19 @@ OBJC_EXPORT NSInteger const IDAnalyticsUnknownInitiation;
 
 /// Convenience method to submit the event to be tracked.
 - (void)track;
+
+#pragma mark - Transformations
+/// @name      Transformations
+
+/// Creates a copy of the event with all attribute values of the designated
+/// class transformed according to the return value of the block.
+///
+/// @param class          The class, members of which will be transformed
+/// @param transformBlock A block that, given a property name and value, returns
+/// a new value for the property
+///
+/// @return An event of the same type as the receiver
+- (instancetype)eventWithAttributesOfClass:(Class)class transformedBy:(IDAnalyticsEventAttributeTransformingBlock)transformBlock;
 
 #pragma mark - Events
 /// @name      Events
