@@ -8,10 +8,16 @@
 
 #import "IDAnalyticsEvent.h"
 
+/// Describes how the thermostat dial was adjusted
 typedef NS_ENUM (NSInteger, IDAnalyticsThermostatAdjustmentInitiation)
 {
+    /// The user tapped the dial then with their finger held down, turned it to
+    /// the desired position and released.
     IDAnalyticsThermostatAdjustmentSpinDialInitiation,
+    /// The user tapped the dial then flicked to release the dial with enough
+    /// velocity that it would have to decelerate before stopping on a value.
     IDAnalyticsThermostatAdjustmentFlingDialInitiation,
+    /// The user tapped and released directly on the desired value.
     IDAnalyticsThermostatAdjustmentTapDialInitiation,
 };
 
@@ -19,6 +25,9 @@ typedef NS_ENUM (NSInteger, IDAnalyticsThermostatAdjustmentInitiation)
 
 #pragma mark - Initiations
 
+/// Sets the initiation for the *Adjusted Thermostat* event.
+///
+/// @param initiation The initiation
 + (void)initiateThermostatAdjustment:(IDAnalyticsThermostatAdjustmentInitiation)initiation;
 
 @end

@@ -41,8 +41,6 @@ OBJC_EXPORT NSString * const IDAnalyticsServiceNameSegmentIO;
 /// Therefore, similarly only one instance of this class should exist at any
 /// given time.
 ///
-/// @param secret The Segment.io secret.
-///
 /// @return A singleton `IDAnalyticsServiceSegmentIO` instance representing the
 /// singleton Segment.io `Analytics` instance.
 + (instancetype)sharedInstance;
